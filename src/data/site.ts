@@ -1,6 +1,8 @@
 export const WHATSAPP_URL = 'https://wa.me/message/4ANGFSLXUM2EE1';
 export const EMAIL = 'fixers.dv@gmail.com';
 export const WEBSITE_URL = 'https://www.fixers.dev';
+// Respects Vite's `base` so the logo resolves when deployed under a sub-path (e.g. GitHub Pages).
+export const LOGO_URL = `${import.meta.env.BASE_URL}fixers-logo.png`;
 export const QR_CODE_URL = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${WHATSAPP_URL}`;
 
 export const NAV_LINKS = [

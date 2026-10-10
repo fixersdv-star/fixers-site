@@ -4,7 +4,7 @@ import { ArrowRight, Clock, Menu, X } from 'lucide-react';
 import ShaderBackground from '../components/ShaderBackground';
 import TextRoll from '../components/TextRoll';
 import { useLondonTime } from '../hooks/useLondonTime';
-import { NAV_LINKS, WHATSAPP_URL } from '../data/site';
+import { LOGO_URL, NAV_LINKS, WHATSAPP_URL } from '../data/site';
 
 /** Light full-viewport hero with the animated shader background and the white pill navbar. */
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="bg-white rounded-full flex items-center justify-between px-3 sm:px-4 py-2">
             <div className="flex items-center gap-4 sm:gap-6">
               <Link to="/" className="flex items-center">
-                <img src="/fixers-logo.png" alt="Fixers" className="h-8 sm:h-9 w-auto" />
+                <img src={LOGO_URL} alt="Fixers" className="h-8 sm:h-9 w-auto" />
               </Link>
 
               <div className="hidden md:flex items-center gap-6">

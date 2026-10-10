@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import Hero from '../sections/Hero';
 import { useScrollReveal } from '../hooks/useReveal';
-import { EMAIL, QR_CODE_URL, QUICK_LINKS, STATS, WEBSITE_URL, WHATSAPP_URL } from '../data/site';
+import { EMAIL, LOGO_URL, QR_CODE_URL, QUICK_LINKS, STATS, WEBSITE_URL, WHATSAPP_URL } from '../data/site';
 
 const webServices = [
   {
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
               <div className="reveal flex items-center justify-center">
                 <img
-                  src="/fixers-logo.png"
+                  src={LOGO_URL}
                   alt="Fixers Web Development Agency Logo"
                   className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-contain"
                 />
@@ -295,7 +295,7 @@ export default function Home() {
             <div className="border-t border-[#1a1a1a] pt-12">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8">
                 <div className="reveal flex flex-col items-center sm:items-start">
-                  <img src="/fixers-logo.png" alt="Fixers Logo" className="w-32 h-32 object-contain mb-4" />
+                  <img src={LOGO_URL} alt="Fixers Logo" className="w-32 h-32 object-contain mb-4" />
                   <p className="text-[#888] text-sm leading-[1.7]">
                     Fixers is a full-service digital agency specializing in custom web development and digital
                     marketing for small businesses.
